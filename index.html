@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Tip calculator app</title>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-</head>
+  </head>
 
-<body>
-  <img class=logo src="./images/logo.svg" alt="logo">
-  <form>
-    <div class="pay-amount">
-      <div class="heading">Bill</div>
-      <input type="number" name="bill-amount" id="bill" min=1 required value=0 autocomplete="off" />
-      <div class="tip">
-        <div>
-          <p class="heading">Select Tip %</p>
+  <body>
+    <img class=logo src="./images/logo.svg" alt="logo">
+    <form>
+      <div class="pay-amount">
+        <div class="heading">Bill</div>
+        <input type="number" name="bill-amount" id="bill" min=1 required value=0 autocomplete="off" />
+        <div class="tip">
+          <div>
+            <p class="heading">Select Tip %</p>
+          </div>
+          <div class="btn-grid">
+            <button class="btn-1 tip-btn" type="button">5%</button>
+            <button class="btn-2 tip-btn" type="button">10%</button>
+            <button class="btn-3 tip-btn" type="button">15%</button>
+            <button class="btn-4 tip-btn" type="button">25%</button>
+            <button class="btn-5 tip-btn" type="button">50%</button>
+            <input class="custom-tip" type="number" id="custom-amount" name="custom" min=0 placeholder="Custom" autocomplete="off" />
+          </div>
         </div>
-        <div class="btn-grid">
-          <button class="btn-1 tip-btn" type="button">5%</button>
-          <button class="btn-2 tip-btn" type="button">10%</button>
-          <button class="btn-3 tip-btn" type="button">15%</button>
-          <button class="btn-4 tip-btn" type="button">25%</button>
-          <button class="btn-5 tip-btn" type="button">50%</button>
-          <input class="custom-tip" type="number" id="custom-amount" name="custom" min=0 placeholder="Custom" autocomplete="off" />
-        </div>
+        <div class="heading">Number of People</div>
+        <input type="number" id="people-number" min=1 required value=0 autocomplete="off" />
       </div>
-      <div class="heading">Number of People</div>
-      <input type="number" id="people-number" min=1 required value=0 autocomplete="off" />
+      <div class="total-amount">
+        <div class="result tip-amount">
+          <div class="sub-total">
+            <div>Tip Amount</div>
+            <div class="person">/ person</div>
+          </div>
+          <div class="tip-number">$0.00</div>
+        </div>
+        <div class="result total-people">
+          <div class="sub-total">
+            <div>Total</div>
+            <div class="person">/ person</div>
+          </div>
+          <div class="people-amount">$0.00</div>
+        </div>
+        <button id="reset-btn" type="button">Reset</button>
+      </div>
+    </form>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/letyoursoulglo" target="_blank">Antonius Copeland</a>.
     </div>
-    <div class="total-amount">
-      <div class="result tip-amount">
-        <div class="sub-total">
-          <div>Tip Amount</div>
-          <div class="person">/ person</div>
-        </div>
-        <div class="tip-number">$0.00</div>
-      </div>
-      <div class="result total-people">
-        <div class="sub-total">
-          <div>Total</div>
-          <div class="person">/ person</div>
-        </div>
-        <div class="people-amount">$0.00</div>
-      </div>
-      <button id="reset-btn" type="button">Reset</button>
-    </div>
-  </form>
+  </body>
+  <script src="main.js"></script>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/letyoursoulglo" target="_blank">Antonius Copeland</a>.
-  </div>
-</body>
-<script src="main.js"></script>
 </html>
