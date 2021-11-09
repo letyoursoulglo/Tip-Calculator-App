@@ -30,6 +30,10 @@ body {
   background-color: var(--clr-Light-grayish-cyan);
 }
 
+h1 {
+  display: none;
+}
+
 form {
   background-color: var(--clr-White);
   border-radius: 1em;
